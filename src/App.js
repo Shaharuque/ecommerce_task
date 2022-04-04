@@ -6,6 +6,7 @@ import Reviews from './Components/Reviews/Reviews'
 import Dashboard from './Components/Dashboard/Dashboard'
 import About from './Components/About/About'
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/about' element={<About></About>}></Route>
       </Routes>
+    <Footer></Footer>  
     </div>
   );
 }
