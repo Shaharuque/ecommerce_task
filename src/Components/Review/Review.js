@@ -8,7 +8,7 @@ const Review = (props) => {
     const showOrNot=()=>{
         setToggle(!toggle)
     }
-    console.log(toggle)
+    //console.log(toggle)
     return (
         <div className=' border-2 mt-6 shadow-lg shadow-teal-200 p-4'>
             <h1 className='font-mono text-xl mb-4'>{name}</h1>

@@ -4,7 +4,7 @@ import {useReviews} from '../../Hooks/useReviews'
 import Review from '../Review/Review';
 
 const Reviews = () => {
-    //by calling custom hook getting the dataa and stored into reviews using array destructring concept
+    //by calling custom hook getting the data and stored into reviews using array destructring concept
     const [reviews,setReviews]=useReviews()
     return (
         <div className='p-8'>

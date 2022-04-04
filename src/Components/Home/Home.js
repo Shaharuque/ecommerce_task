@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link, useNavigate } from 'react-router-dom';
 import { useReviews } from '../../Hooks/useReviews';
 //image utilities folder thekey import korey use kora holo
@@ -8,7 +8,7 @@ import Review from '../Review/Review';
 const Home = () => {
     //useReviews custom hook
     const [reviews, setReviews] = useReviews()
-    console.log(reviews.length)
+    //console.log(reviews.length)
 
     //See all comments btn event handler
     const navigate=useNavigate()
