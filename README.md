@@ -1,6 +1,15 @@
 # Live site
 [Pod Furniture](https://pod-furniture.netlify.app/)
 
+## Technologies
+***
+A list of things I did within the project:
+* Used React Router to route/navigate between pages
+* Used custom Hook to reusibility purpose
+* Used Charts from reChart
+* Used conditional rendering
+* Used spinner 
+* Did tried to responsive a bit but my dashboard isn't responsive
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
