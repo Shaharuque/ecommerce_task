@@ -9,6 +9,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import NoPageFound from './Components/Nopagefound/NoPageFound';
 import Blogs from './Components/Blogs/Blogs';
+import ProductDetails from './Components/Products/ProductDetails';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/product/details/:id' element={<ProductDetails></ProductDetails>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>

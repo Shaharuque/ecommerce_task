@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useReviews } from '../../Hooks/useReviews';
 //image utilities folder thekey import korey use kora holo
 import pic from '../../Utilites/Images/product.jpg'
+import Products from '../Products/Products';
 import Review from '../Review/Review';
 
 const Home = () => {
@@ -30,6 +31,10 @@ const Home = () => {
                 <div className='rounded shadow-lg shadow-teal-700'>
                     <img className='' src={pic} alt="" />
                 </div>
+            </div>
+            <div className='my-8'>
+                <h1 className='text-center font-bold text-xl'>Best Selling Products</h1>
+                <Products></Products>
             </div>
             <div>
                 <h1 className='font-mono text-center mt-12 text-teal-800 font-semibold text-2xl'>Customer Reviews ({(reviews.length)-5})</h1>
