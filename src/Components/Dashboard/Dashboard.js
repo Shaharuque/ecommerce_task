@@ -92,7 +92,7 @@ const Dashboard = () => {
 
             <div className='p-4'>
                 <h1 className='text-center text-teal-800 font-serif'>Inverment vs Revenue vs Sell(Pie-Chart)</h1>
-                <ResponsiveContainer width={700} height={400}>
+                <ResponsiveContainer width={600} height={400}>
                     <PieChart width={400} height={400}>
                         <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={80} innerRadius={50} fill="#8884d8" />
                         <Pie data={data} dataKey="revenue" cx="50%" cy="50%"  outerRadius={50} innerRadius={35} fill="#82ca9d" label />
@@ -102,7 +102,7 @@ const Dashboard = () => {
             </div>
 
             <div className='flex items-center'>
-                <BarChart width={730} height={250} data={data}>
+                <BarChart width={600} height={250} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="data" />
                     <YAxis />

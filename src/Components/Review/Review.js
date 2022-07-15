@@ -19,7 +19,7 @@ const Review = (props) => {
             }
             <button onClick={showOrNot} className='rounded bg-teal-400 md:ml-4 p-1 text-xs text-white hover:bg-purple-800 mb-3'>Show more</button>
             </p>
-            <p className='font-sans'>Ratings: {ratings}</p>
+            <p className='font-mono font-bold'>Ratings: {ratings}</p>
         </div>
     );
 };
