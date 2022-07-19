@@ -45,10 +45,10 @@ const Dashboard = () => {
     ]
 
     return (
-        <div className=' grid md:grid-cols-2 gap-2 p-5'>
+        <div className=' grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-16 p-5 bg-black'>
 
             <div className='p-4'> 
-                <h1 className='text-center text-teal-800 font-serif'>Inverment vs Revenue vs Sell</h1>
+                <h1 className='text-center text-yellow-500 font-serif'>Inverment vs Revenue vs Sell</h1>
                 <LineChart width={600} height={400} data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                     <Line type="monotone" dataKey="investment" stroke="blue" />
                     <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
@@ -65,7 +65,7 @@ const Dashboard = () => {
                 </LineChart>
             </div>
 
-            <div className='flex justify-center'>
+            <div className='flex justify-center items-center'>
                 <ResponsiveContainer width={600} height={400}>
                     <AreaChart
                         width={500}
@@ -91,7 +91,7 @@ const Dashboard = () => {
             </div>
 
             <div className='p-4'>
-                <h1 className='text-center text-teal-800 font-serif'>Inverment vs Revenue vs Sell(Pie-Chart)</h1>
+                <h1 className='text-center text-yellow-500 font-serif'>Inverment vs Revenue vs Sell(Pie-Chart)</h1>
                 <ResponsiveContainer width={600} height={400}>
                     <PieChart width={400} height={400}>
                         <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={80} innerRadius={50} fill="#8884d8" />

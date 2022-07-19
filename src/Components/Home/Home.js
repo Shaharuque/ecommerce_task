@@ -24,18 +24,20 @@ const Home = () => {
                     <h1 className='text-5xl font-mono'>BEST SELLING PRODUCT</h1>
                     <span className='text-sm font-serif text-teal-700'>in amazon site...</span>
 
-                    <Link to='/about' className='bg-teal-700 text-white font-sans mt-12 rounded w-1/4'>
+                    <a href='#home' className='bg-teal-700 text-white font-sans mt-12 rounded w-1/4'>
                         <p className='text-center'>Live Demo</p>
-                    </Link>
+                    </a>
                 </div>
                 <div className='rounded shadow-lg shadow-teal-700'>
                     <img className='' src={pic} alt="" />
                 </div>
             </div>
+
             <div className='my-8'>
                 <h1 className='text-center font-bold text-xl'>Best Selling Products</h1>
                 <Products></Products>
             </div>
+
             <div>
                 <h1 className='font-mono text-center mt-12 text-teal-800 font-semibold text-2xl'>Customer Reviews ({(reviews.length)-5})</h1>
                 <div className='p-8'>

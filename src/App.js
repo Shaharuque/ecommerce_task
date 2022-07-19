@@ -10,6 +10,8 @@ import Footer from './Components/Footer/Footer';
 import NoPageFound from './Components/Nopagefound/NoPageFound';
 import Blogs from './Components/Blogs/Blogs';
 import ProductDetails from './Components/Products/ProductDetails';
+import { ToastContainer,  } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path='*' element={<NoPageFound></NoPageFound>}></Route>
       </Routes>
     <Footer></Footer>  
+    <ToastContainer/>
     </div>
   );
 }
