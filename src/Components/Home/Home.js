@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useReviews } from '../../Hooks/useReviews';
 //image utilities folder thekey import korey use kora holo
@@ -10,11 +11,13 @@ const Home = () => {
     //useReviews custom hook
     const [reviews, setReviews] = useReviews()
     //console.log(reviews.length)
+    const [show, setShow] = useState(false)
 
     //See all comments btn event handler
-    const navigate=useNavigate()
-    const allReviews=()=>{
-        navigate('/reviews')
+    const navigate = useNavigate()
+    const allReviews = () => {
+        //navigate('/reviews')
+        setShow(!show)
     }
 
     return (
@@ -39,14 +42,16 @@ const Home = () => {
             </div>
 
             <div>
-                <h1 className='font-mono text-center mt-12 text-teal-800 font-semibold text-2xl'>Customer Reviews ({(reviews.length)-5})</h1>
+                <h1 className='font-mono text-center mt-12 text-teal-800 font-semibold text-2xl'>Customer Reviews({reviews.length})</h1>
                 <div className='p-8'>
                     {
-                        reviews.slice(0, 3).map(review => <Review key={review._id} review={review}></Review>)
+                        show ? reviews.map(review => <Review key={review._id} review={review}></Review>) : reviews.slice(0, 3).map(review => <Review key={review._id} review={review}></Review>)
                     }
                 </div>
                 <div className='flex justify-center my-6 '>
-                    <button onClick={allReviews} className='text-center bg-teal-700 text-white font-sans rounded  p-3 '>See all comments</button>
+                    <button onClick={allReviews} className='text-center bg-teal-700 text-white font-sans rounded  p-3 '>{
+                        show?'Show less comments':'Show more comments'
+                    }</button>
                 </div>
             </div>
         </div>

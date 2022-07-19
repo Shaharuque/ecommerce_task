@@ -1,15 +1,24 @@
 # Live site
-[Pod Furniture](https://pod-furniture.netlify.app/)
+[fakeEshop project](https://fake-ecommerce-system.netlify.app/)
 
-## Technologies
+## Workflow
 ***
 A list of things I did within the project:
 * Used React Router to route/navigate between pages
 * Used custom Hook to reusibility purpose
 * Used Charts from reChart
+* fetch, react-query used for API calling(GET method) for products fetching and product detail showing
 * Used conditional rendering
-* Used spinner 
+* Used loading spinner 
 * Did tried to responsive a bit but my dashboard isn't responsive
+
+## Technology Used
+***
+* React.js
+* Tailwind CSS
+* React-query
+* Javascript, ES6 features
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
